@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: "幼圆";
+}
+body{
+	text-align:center;
+    background-repeat:no-repeat; 
+    background-attachment:fixed;
+    background-position:center;
+    background-size: 110%;
+}
+
+#as{
+	position: absolute;
+	top: 20px;left: 44%;
+	margin: 0 auto;
+	margin-bottom: 37px;
+}
+#gap{
+	position: relative;
+	top: 55px;
+	margin-left: -40%;
+}
+#gap img{
+	position: relative;
+	width: 300px;
+	height: 10px;
+}
+#f{
+	margin-top: 75px;
+}
+h1,h2,p{
+	color: #00BFFF;
+	text-align: center;
+}
+h1{
+	text-shadow:#00BFFF 0px 1px 2px;
+}
+h2{
+	font-size: 22px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	margin-top:16px;
+	margin-buttom: 3px;
+}
+p{
+	letter-spacing: 5px;
+	font-size: 20px;
+	padding: 8px 10px 1px 10px;
+	line-height: 34px;
+}
+p:before{
+	position: absolute;
+	content: '';
+	border: 1px solid #00BFFF;
+	width: 400px;
+	height: 30px;
+	left: 34.5%;
+	border-radius: 10px;
+	background: rgba(135,206,250,0.2);
+	padding: 2px; 
+}
+.next{
+	position: absolute;
+	left:48%;
+	top: 91.5%;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+}
+.next img{
+	width: 55px;
+	height: 55px;
+}
+/*#next{
+	position: absolute;
+	left:50%;
+	top: 92%;
+	width: 18px;
+	height: 50px;
+}
+.circle,.cir,.cle{
+	position: absolute;
+	background-color: #5F9EA0;
+	border-radius: 50%;
+}
+.circle{
+	width: 10px;
+	height: 10px;
+	top: 5px;
+	left: 4px;
+}
+.cir{
+	width: 7px;
+	height: 7px;
+	top: 24px;
+	left: 5px;
+}
+.cle{
+	width: 5px;
+	height: 5px;
+	top: 40px;
+	left: 6px;
+}
+.l img{
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	left: -12px;
+	top: 2px; 
+}
+@-webkit-keyframes twinkling{  
+    0%{
+       opacity:0; 
+    }
+	10%{
+       opacity:0.1; 
+    }
+    20%{
+       opacity:0.2; 
+    }
+    30%{
+       opacity:0.3; 
+    }
+    50%{
+       opacity:0.5; 
+    }
+   
+    70%{
+       opacity:0.7; 
+    }
+    100%{
+       opacity:1;
+    }
+}
+ .l img{
+    -webkit-animation: twinkling 0.8s infinite ease-in-out; 
+}
+.circle,.cir,.cle{
+	-webkit-animation: twinkling 0.4s infinite ease-in-out; 
+}*/

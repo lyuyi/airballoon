@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>7</title>
+	<link rel="stylesheet" type="text/css" href="css/seven_style.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+		$(".title").fadeIn(2500);
+		$("#gap").fadeIn(1500);
+	    $(".footer").fadeIn(3000);
+	    $(".bt").fadeIn(2000);
+	    $(".pin").fadeIn(3000);
+	    $(".tijiao").fadeIn(3000);
+	    $(".oimg").animate({left:'110px'},1100); 
+	    $(".t1").animate({top:'145px'},1000);
+	    $(".t2").animate({top:'145px'},1500);
+	    $(".t3").animate({top:'-145px'},2500);
+	    $(".t4").animate({top:'-145px'},2800);
+	    $(".tijiao").animate({top:'0px'},3000);
+	    $(".footer").animate({top:'-10px'},1000);
+	});
+	</script>
+</head>
+<body style="background-image: url(img/kj1.jpg)">
+	<div class="main">
+		<div class="content">
+			<div class="title" style="display:none"><h1>玉林互联网大会</h1></div>
+			<div id="gap" style="display:none"><img src="img/2.png" class="oimg"></div>
+			<div class="tit" style="display:none"><h2>索票通道</h2></div>
+			<div class="pin" style="display:none">
+				<p>提交报名后分享朋友圈并截图<br>将有机会获得VIP 门票一张<br><span>（凭报名信息和朋友圈分享页面前往大会现场领取门票）</span></p>
+			</div>
+			<div class="bt" style="display:none">
+				<input type="text" placeholder="请输入公司名称" class="t1"><br>
+				<input type="text" placeholder="请输入职位" class="t2"><br><br>
+				<input type="text" placeholder="请输入姓名" class="t3"><br>
+				<input type="text" placeholder="请输入手机号码" class="t4"><br>
+				<input type="submit" value="提交" class="tijiao">
+			</div>
+			
+		</div>
+		<div class="footer" style="display:none"><p>限量贵宾门票500张，以收到短信通知及朋友圈截图入场，一人一票</p>
+		</div>
+	</div>
+</body>
+</html>
