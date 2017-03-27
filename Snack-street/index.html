@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index首页</title>
+
+	<base target="_blank">
+	<style type="text/css">
+	body{height: 600px;}
+	header{width: 100%;height: 10%;background: white;}
+	footer{width:100%;height: 5%;}
+	section{width: 100%;height: 85%;background: #FAFAD2;overflow: hidden;}
+	li{line-height: 40px;color: #DAA520;}
+	ul li a:hover{color: #FF7F50}
+	.pp{
+		font-size: 20px;
+		line-height: 25px;
+		color: #DAA520;
+	}
+	.foot{
+		float: left;
+		font: 14px/15px 隶书;
+		width:25%;
+	}
+	.word{
+		width: 100%;
+		margin: 0 auto;
+		text-align: top;
+		font: 20px/30px 隶书;
+	}
+	</style>
+	<script>
+	    function checkHttps () {
+	        BaiduHttps.useHttps();    
+	    };
+	    function baiduWithHttps (formname) {
+	        var data = BaiduHttps.useHttps();
+	        if (data.s === 0) {
+	            return true;
+	        }
+	        else {
+	            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+	            return true;
+	        }
+    };
+</script>
+</head>
+<body>
+	<audio src="子页面/Meja - Always With Me.mp3" autoplay loop hidden="true">您的浏览器不支持 audio 标签。</audio><!-- autoplay音频在就绪后马上播放。loop循环，音频结束时重新开始播放.controls向用户显示控件，比如播放按钮 -->
+	<header>
+	 <img src="子页面/5.png" style="width: 100px;height:100%;float: left;">
+	 <p style="font:30px/20px 隶书;float: left;padding: 5px;color: #FF8C00">旅游·吃货攻略(^_^)</p>
+	<div class="word">古人说，食色，性也。关于吃货，也完全符合古人总结的人类这个特征。</div>
+	</div>
+	<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" style="float: right;padding-right: 120px">
+    <input type="text"  onfocus="checkHttps" name="word"  size="15">
+    <input type="submit"value="搜索">
+    <input name=ie type=hidden value=utf-8> 
+</form>
+
+	</header>
+	<section>
+	<div style="width: 100%;height: 85%;margin-left: auto;margin-right: auto;">
+	<div style="width: 10%;float:left;overflow:hidden">
+		<img src="子页面/樱花瓣.jpg" width="300px" height="550px">
+	</div>
+	<div style="text-align:center;margin:10px 0 10px 10px ;float:left;width: 70%;overflow:hidden">
+	<img src="夫子4.jpg" id="img" width="700px" height="600px";>
+	
+	<script>
+	var arr=new Array();
+		arr[0]="子页面/中山路3.jpg";//放图片地址
+		arr[1]="子页面/中山路10.jpg";
+		arr[2]="子页面/中山路2.jpg";
+		arr[4]="子页面/中山路7.jpg";
+		arr[3]="子页面/南宁3.jpg";
+		arr[5]="子页面/厦门7.jpg";
+		var index = 0;//定义一个全局变量，记录当前页面显示的图片在数组中的索引位置,初始值为0
+		function changeImg(){//定义一个函数用来替换图片的链接地址
+	    if(index < 5){//先判断下一个图片的索引位置
+		   index ++;
+		  }else{//当前图片已经是zuihou张，则切换到第一张
+		   index = 0;
+		  }
+		 document.getElementById("img").src=arr[index];
+		 }
+		 //定时执行函数changeImg，间隔为1000毫秒,第一个参数为要调用的函数，记得加上双引号
+		window.setInterval("changeImg()",1500);
+    </script>
+    </div>
+	<div style="width: 18%;float: left;height: 100%;font: 20px/10px 隶书;margin:0 auto;overflow:hidden">
+		<ul>
+		    <li><a href="子页面/five.html">南京夫子庙</a></li>
+			<li><a href="子页面/four.html">上海城隍庙 </a></li>
+			
+			<li><a href="子页面/ten.html">南宁中山路</a></li>
+			<li><a href="子页面/eight.html">成都锦里 </a></li>
+			<li><a href="子页面/six.html">西安回民小吃街</a></li>
+			<li><a href="子页面/er.html">武汉户部巷</a></li>
+			<li><a href="子页面/eleven.html">青岛·市南劈柴院</a></li>
+			<li><a href="子页面/nine.html">丽江古城四方街</a></li>
+			<li><a href="子页面/three.html">北京簋街 </a></li>
+			<li><a href="子页面/seven.html">厦门中山路步行街</a></li>
+		</ul>
+		<p class="pp">demo长的丑的排在后面，╭(╯^╰)╮就是这么现实哦呵呵！</p>
+	</div>
+
+	</section>
+	<hr>
+	<footer>
+		<div style="float: left;width:25%;font: 14px/15px 隶书;">
+			<h3>北京簋街 </h3>
+			<p>簋（Guǐ）指的是中国古代一种圆口两耳的<br>.食物容器，一条街以簋命名，<br>自然是个吃饭的去处。<br>簋街位于东直门内。<br>在这条一公里多的大街上，<br>150多家商业店铺中餐饮服务业的就占90%，<br>餐厅密度之大在京城恐怕难以找出第二家。<br>因此簋街也被称为是北京的餐饮一条街。<br>这条街在今天也是京城美食<br>集中展示的一个绝好场所</p>
+		</div>
+		<div class="foot">
+			<h3>武汉户部巷 </h3>
+			<p>
+				户部巷，“汉味小吃第一巷”位于中国著名的<br>历史文化名城武汉市有名的武昌民主路<br>和自由路，是一条长150米的百年老巷，<br>其繁华群几十年经久不衰。<br>户部巷汉味风情街位于武昌<br>最繁华的司门口，东靠十里长街（解放路）<br>，西临浩瀚长江，南枕“天下江山第一楼”<br>——黄鹤楼，北接都府堤红色景区，<br>是一处由名街名楼名景名江<br>环绕而成的美食天堂，以“小<br>吃”闻名的户部巷，就是武汉最有名的“早点<br>一条巷”。所谓“来武汉必来户部巷。”
+			</p>
+		</div>
+		<div class="foot">
+			<h3>南京夫子庙 </h3>
+			<p>
+			    夫子庙是一组规模宏大的古建筑群，历经沧桑，<br>是供奉和祭祀孔子的地方，中国四大文庙之一，<br>被誉为秦淮名胜而成为古都南京的特色景观区，<br>是中国最大的传统古街市。<br>
+				夫子庙供应的传统食品和风味小吃不下200种。<br>夫子庙饮食文化源远流长，可以远溯到六朝时期，<br>明清两朝尤盛，各派菜系和小吃争奇壮举胜，<br>风味独具。改革开放以来，市政府对<br>散落民间的风味小吃发掘整理，<br>在继承传统特色的基础上进行创新，<br>形成了以“秦淮八绝”为代表的秦淮风味小吃。
+			</p>
+		</div>
+		<div class="foot">
+			<h3>成都锦里</h3>
+			<p>
+				四川小吃历史悠久，种类繁多，各具风味。<br>锦里小吃街，将川内各地名小吃悉数<br>收罗于街内,现场制作，现场叫卖，<br>有的吃，有的看，真的好吃看的见。<br>在锦里，不去吃小吃就是最大的遗憾。<br>比较出名的与好吃街的荞面、<br>三大炮、牛肉焦饼、黄醪糟、糖油果子等等。<br>色香味的甜水面、凉面、卤菜都不错。<br>还有一家卖油炸臭豆腐、洋芋的，<br>也是四川的名小吃。
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>

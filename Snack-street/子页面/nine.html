@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>丽江古城四方街</title>
+</head>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中*/
+
+body {
+  background: url(ct9.jpg);background-repeat: no-repeat;background-size: 100%;background-attachment: fixed;
+}
+
+.gallery {
+  position: relative;
+  float: left;
+  width: 500px;
+  margin:0px 90px;
+  padding: 5px;
+  background:	#cccccc;
+ 
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  width: 150px;
+  transition: .1s transform;/*过渡*/
+  transform: translateZ(0);/*转换：z轴0px移动*/
+  /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}/*hover 选择器,用于选择鼠标指针浮动在上面的元素*/
+
+.gallery > div:hover > img {
+  transform: scale(2.8, 2.8);/*定义2D缩放转换*/
+  transition: .3s transform;
+}
+
+.ch:before, .ch:after {
+  display: table;/*使该元素按table样式渲染, 就是添加一个表格样式*/
+  content: "";
+  line-height: 0;
+}/*伪类元素：before，after在指定的元素内容（而不是元素本身）之前或者之后插入一个包含content属性指定内容的行内元素插入的行内元素是作为.cf的子元素..没有插入任何元素*/
+
+.ch:after {
+  clear: both;/*清除全部样式,主要是用于对多个div浮动的清除*/
+}
+
+h4 {
+  margin: 30px 0;
+  font-size: 24px;
+  text-align: center;
+}
+.to{
+	
+	width: 300px;
+	height: 300px;
+	float: left;
+	font: 20px/20px 隶书;
+}
+
+.rou{
+	width: 300px;
+	height: 300px;
+	float: right;
+	margin-right: 20px;
+	font: 25px/25px 隶书;
+}
+p{
+	
+	margin: 30px 0;
+	text-align: left;
+	text-indent: 2em;
+	/*em是相对单位，2em即现在一个字大小的两倍*/ 
+}
+/*footer {
+  margin: 80px 0;
+  text-align: center;
+}*/
+
+</style>
+
+</head>
+<body>
+<div style="width: 1300px;margin-left: 50px;margin-top: 30px;">
+	
+			<div class="to">
+				<h4> &nbsp&nbsp每个人去丽江的理由都不一样，但是身为一个爱吃的娃娃，我是想去吃各种好吃的。</h4>
+				<p>丽江作为“中国最美的少数民族古城”，美食以纳西菜色为主，小吃和火锅也都非常出名，丽江有很多的美食聚集地，不同的季节也有不一样的应季风味。<br>
+				&nbsp&nbsp&nbsp&nbsp纳西菜比较具有代表性的有三叠水和八大碗，“三叠水”是纳西人的最高礼仪，“八大碗”是云南农家传统的年夜饭。每年的雨季都是吃新鲜野生菌的好时节，不仅名贵且味美滋补，也是丽江独有的佳肴，六至十月是吃菌子的好时候……想了解更多请自行百度。</p>
+				
+			</div>
+	<div class="rou">
+		<p>丽江的特色小吃有很多。大概就有腊排骨火锅、黑山羊火锅、鸡豆凉粉、纳西烤肉、琵琶肉、丽江粑粑、水性杨花、米灌肠、野生菌火锅、东巴烤鱼、丽江三文鱼、汽锅鸡、洋芋鸡、杂锅菜、包浆豆腐……</p>
+		<p style="color: #8B0000">看不清吗？偷偷告诉你，鼠标放到图片上会放大哦。<br>
+		……………………</p>
+	</div>
+	
+	<div class="gallery ch">
+		<div><img src="丽江5.jpg"></div>
+		<div><img src="丽江2.jpg"></div>
+		<div><img src="丽江3.jpg"></div>
+		<div><img src="丽江8.jpg"></div>
+		<div><img src="丽江1.jpg"></div>
+		<div><img src="丽江6.jpg"></div>
+		<div><img src="丽江7.jpg"></div>
+		<div><img src="丽江9.jpg"></div>
+		<div><img src="丽江4.jpg"></div>		
+		<div><img src="丽江10.jpg"></div>
+		<div><img src="丽江11.jpg"></div>
+		<div><img src="丽江13.jpg"></div>
+		<div><img src="丽江12.jpg"></div>
+		<div><img src="丽江15.jpg"></div>
+		<div><img src="丽江17.jpg"></div>
+		<div><img src="丽江16.jpg"></div>
+		<div><img src="丽江14.jpg"></div>
+		<div><img src="丽江.jpeg"></div>
+	</div>
+</div>
+</body>
+</html>

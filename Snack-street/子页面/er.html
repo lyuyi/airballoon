@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>户部巷</title>
+	<style>
+	body{background: url(ct8.jpg);background-repeat: no-repeat; ;background-size: 100%;background-attachment: fixed;}
+	ul,p{padding:0; margin:0;}
+	.times {display:block;margin:15px 0;}/*首先，我们要创建一个容器class*/
+	.times ul {margin-left:400px;border-left:2px solid #ddd;}/*利用ul标签的特性，设置外边框左移25px，左边边框是2px粗的实心线，颜色一般要浅一点*/
+	.times ul li {width:100%;margin-left:-12px;line-height:30px;font-weight:narmal; list-style:none;}/*一般情况，通过li标签控制圆点回到时间线上，然后控制要出现的文字大小和是否粗体*/
+	.times ul li b {width:8px;height:8px;background:#fff;border:2px solid #555;margin:5px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;overflow:hidden;display:inline-block;float:left;}/*利用处理加粗以外没有其它特别属性，b标签做时间轴的圆点。border-radius设置圆角*/
+	.times ul li span {padding-left:50px;font-size:20px;line-height:20px;color:#555;}/*设置span标签的属性，让它来做时间显示，加一点边距，使时间显示离时间线远一点*/
+	.times ul li:hover b {border:2px solid #ff6600;}/*注意这一行，前面的li标签后面加了一个:hover伪属性，意思是鼠标移上来，激活后面的属性，这样可以设置鼠标移动到整个时间范围的时候，时间点和时间显示会变色*/
+	.times ul li:hover span {color:#ff6600;}/*同上*/
+	.times ul li img {padding-left:40px;line-height:25px;max-width:100%;height:auto;}/*这里利用段落标签p做文字介绍*/
+	img.double-border {
+        border: 3px solid #ddd;
+        padding:5px;
+        background: #fff;
+        width: 500px;
+        height: 400px;
+	}
+	</style>
+</head>
+<body style="height: 768px;">
+	<div class="times">
+	<h1 style="margin-left: 100px">所谓“来武汉必来户部巷。”</h1>
+		<ul>
+			<li><b></b><span>夜晚的户部巷很多小摊贩，类似步行街</span><br><br>
+			<img src="户.jpg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>便宜的肉肉^_^</span><br><br>
+			<img src="户1.jpg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>这个应该是铁板烧吧嘻嘻</span><br><br>
+			<img src="户2.jpeg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>三鲜豆皮，5元、10元/份</span><br><br>
+			<img src="户4.jpeg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>路边的小吃摊贩</span><br><br>
+			<img src="户3.jpg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>没错！这真的只是普通油条</span><br><br>
+			<img src="户部巷4.jpg" class="double-border" ><br><br><br><br>
+			</li>
+			<li><b></b><span>热干面最出名的就是蔡林记。我国的“五大名面”之一</span><br><br>
+			<img src="户部巷5.jpg" class="double-border" >
+			<img src="户部巷6.jpg" class="double-border" ><br><br></li>
+			<li><b></b><span>烤鱼，武昌鱼？(没吃过……)还有各种卤味</span><br><br>
+			<img src="户部巷7.jpg" class="double-border" ><br><br>
+			<img src="户部巷8.jpg" class="double-border" ><br><br></li>
+			<li><b></b><span>早点第一巷和……</span><br><br>
+			<img src="户部巷9.jpg" class="double-border" ><br><br>
+			<img src="户部巷10.jpg" class="double-border" ><br><br></li>
+			<li><b></b><span>其实我没有去过户部巷，虽然离学校不是特远，但是我居然没有去过，心痛自己五秒。。其实是木有人陪我去，哭。</span></li>
+			<li><b></b><span></span></li>
+		</ul>
+	</div>
+</body>
+</html>

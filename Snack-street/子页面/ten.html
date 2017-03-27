@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>南宁中山路</title>		
+	<style>
+	body{background: url(ct10.jpg);background-repeat: no-repeat; ;background-size: 100%;background-attachment: fixed;}
+	ul,p{padding:0; margin:0;}
+	.times {display:block;margin:15px 0;}/*首先，我们要创建一个容器class*/
+	.times ul {margin-left:200px;border-left:2px solid 	#778899;}/*利用ul标签的特性，设置外边框左移25px，左边边框是2px粗的实心线，颜色一般要浅一点*/
+	.times ul li {width:100%;margin-left:-12px;line-height:30px;font-weight:narmal; list-style:none;}/*一般情况，通过li标签控制圆点回到时间线上，然后控制要出现的文字大小和是否粗体*/
+	.times ul li b {width:8px;height:8px;background:#fff;border:2px solid #555;margin:5px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;overflow:hidden;display:inline-block;float:left;}/*利用处理加粗以外没有其它特别属性，b标签做时间轴的圆点。border-radius设置圆角*/
+	.times ul li span {padding-left:50px;font-size:20px;line-height:20px;color:	#D3D3D3;}/*设置span标签的属性，让它来做时间显示，加一点边距，使时间显示离时间线远一点*/
+	.times ul li:hover b {border:2px solid #ff6600;}/*注意这一行，前面的li标签后面加了一个:hover伪属性，意思是鼠标移上来，激活后面的属性，这样可以设置鼠标移动到整个时间范围的时候，时间点和时间显示会变色*/
+	.times ul li:hover span {color:#ff6600;}/*同上*/
+	.times ul li img {padding-left:40px;line-height:25px;max-width:100%;height:auto;}/*这里利用段落标签p做文字介绍*/
+	img.double-border {
+        border: 3px solid #778899;
+        padding:5px;
+        background:	#B0C4DE;
+	}
+	h1:hover {color: #ff6600;}
+	</style>
+</head>
+<body style="height: 768px;">
+	<div class="times">
+	<h1 style="margin: 100px 100px;text-align: center;width: 800px">南宁俗话说“英雄难过美人关，美女难过酸野摊”正应征了中山路的美食繁多、美味的映象！</h1>
+		<ul>
+			<li><b></b><span>夜晚很多小摊贩在街道两边，类似步行街（不过南宁城管太可怕白天一般木有！）</span><br><br>
+			<img src="南宁3.jpg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>不知道是什么鬼^_^</span><br><br>
+			<img src="南宁2.jpg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>女生大多数爱吃的甜点小吃嘻嘻</span><br><br>
+			<img src="南宁1.jpeg" class="double-border" ><br><br>
+			</li>
+			<li><b></b><span>各种海鲜，有钱的话吃到你想吐O(∩_∩)O哈哈~</span><br><br>
+			<img src="南宁4.jpg" class="double-border" width="590px"><br><br>
+			</li>
+
+			<li><b></b><span>田螺，一般人不会吃哈哈哈(∩_∩)</span><br><br>
+			<img src="中山路8.jpg" class="double-border" width="600px"><br><br>
+			</li>
+
+			</li>
+			<li><b></b><span>虽然白天看起来破破旧旧的街道灯光点缀起来还是蛮好看的</span><br><br>
+			<img src="中山路2.jpg" class="double-border" width="600px"><br><br>
+			</li>
+			<li><b></b><span>码得整整齐齐的海鲜，真是棒极了！</span><br><br>
+			<img src="中山路6.jpg" class="double-border" width="600px"><br><br><br>
+			<li><b></b><span>南宁比较有名的还有老友粉</span></li><br><br><li><b></b><span></span></li><li><b></b><span></span></li>
+		</ul>
+	</div>
+</body>
+</html>

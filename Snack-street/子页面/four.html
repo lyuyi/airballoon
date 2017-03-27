@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上海城隍庙</title>
+<style>
+/*@import url("http://fonts.googleapis.com/css?family=Lato");*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中*/
+
+body {
+  background: url(ct2.jpg);background-repeat: no-repeat;background-size: 100%;background-attachment: fixed;
+}
+
+.gallery {
+  position: relative;
+  float: left;
+  width: 790px;
+  margin:0px 90px;
+  padding: 5px;
+  background: #FFFACD;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  width: 250px;
+  transition: .1s transform;/*过渡*/
+  transform: translateZ(0);/*转换：z轴0px移动*/
+  /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}/*hover 选择器,用于选择鼠标指针浮动在上面的元素*/
+
+.gallery > div:hover > img {
+  transform: scale(1.5, 1.5);/*定义2D缩放转换*/
+  transition: .3s transform;
+}
+
+.ch:before, .ch:after {
+  display: table;/*使该元素按table样式渲染, 就是添加一个表格样式*/
+  content: "";
+  line-height: 0;
+}/*伪类元素：before，after在指定的元素内容（而不是元素本身）之前或者之后插入一个包含content属性指定内容的行内元素插入的行内元素是作为.cf的子元素..没有插入任何元素*/
+
+.ch:after {
+  clear: both;/*清除全部样式,主要是用于对多个div浮动的清除*/
+}
+
+h4 {
+  margin: 30px 0;
+  font-size: 24px;
+  text-align: center;
+}
+.to{
+	
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+p{
+	font: 20px/20px 隶书;
+	margin: 30px 0;
+	text-align: left;
+	text-indent: 2em;
+	/*em是相对单位，2em即现在一个字大小的两倍*/ 
+}
+/*footer {
+  margin: 80px 0;
+  text-align: center;
+}*/
+
+</style>
+
+</head>
+<body>
+<div style="width: 1300px;margin-left: 50px;margin-top: 30px;">
+	
+			<div class="to">
+				<h4>"到上海，外滩不可不去；去外滩，城隍庙不可不去"</h4>
+				<p>城隍庙，承载了上海百年回忆。明永乐年间，改建为城隍庙；经过风雨的洗礼，如今繁华依旧，时间雕刻的痕迹隐藏在一砖一瓦一梁一木之间，不经意间猛然想起这座庙宇已有600多年的历史了。<br>&nbsp&nbsp&nbsp&nbsp城隍庙的小吃街里藏着的美食同样是历史悠久：绿波廊的特色点心、松月楼的素菜包、桂花厅的鸽蛋圆子、松云楼的八宝饭、南翔小笼、宁波汤团、酒酿圆子、蟹壳黄、三丝眉毛酥、排骨年糕、南翔小笼馒头、单档/双档、糟田螺、上海小馄饨、生煎馒头、开洋葱油拌面、双酿团、金腿小粽子、桂花糯米藕。</p>
+			</div>
+	
+	
+	<div class="gallery ch">
+		<div><img src="城隍2.jpg"></div>
+		<div><img src="城隍1.jpg"></div>
+		<div><img src="城隍3.jpg"></div>
+		<div><img src="城隍8.jpg"></div>
+		<div><img src="城隍5.jpg"></div>
+		<div><img src="城隍6.jpg"></div>
+		<div><img src="城隍7.jpg"></div>
+		<div><img src="城隍9.jpg"></div>
+		<div><img src="城隍4.jpg"></div>
+	</div>
+</div>
+</body>
+</html>
