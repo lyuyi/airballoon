@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: "宋体";
+}
+body{
+	text-align:center;
+	background-image:url(img/bg2.jpg);
+    background-repeat:no-repeat; 
+    background-attachment:fixed;
+    background-position:center;
+    z-index: 10;
+}
+
+.bg img{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 10px;
+	top: 150px;
+}
+#box img{
+	position: absolute;
+	top: 30%;
+	width: 120px;
+	height: 120px;
+}
+
+.content{
+	position: absolute;
+	left: 45%;
+	top: 30%;
+	width: 400px;
+	height: 150px;
+}
+.content h2{
+	color: #00BFFF;
+	font-size: 35px;
+	cursor: pointer;
+	text-shadow:#00BFFF 0px 2px 2px; 
+}
+.content h1{
+	color: transparent;
+	background:-webkit-linear-gradient(left,#f00,#ff0 25%,#0f0 40%,#0ff 55%,#00f 70%,#f00);
+    -webkit-background-clip:text;
+	font-size: 43px;
+	cursor: pointer;
+}
+.content span{
+	width: 50px;
+	height: 50px;
+	font-size: 70px;
+	font-weight: 900;
+	color: transparent;
+	background:-webkit-linear-gradient(left,#f00,#ff0 25%,#0f0 40%,#0ff 55%,#00f 70%,#f00);
+	-webkit-background-clip:text;
+    cursor: pointer;
+}
+.foot{
+	position: absolute;
+	top: 83%;
+	left: 41%;
+}
+.foot p{
+	color: #696969;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	line-height: 1.5;
+}
+
+.down img{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	padding: 0px;
+	top: 12px;
+	left: 6px;
+	border-radius: 50%;
+	z-index: 999;
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+.down:hover img{
+ 	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+.down{
+	position: relative;
+	border: 1px solid #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: 643px;
+	margin-top: 625px;
+}

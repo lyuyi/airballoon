@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: "幼圆";
+}
+body{
+	margin: 0;
+	background-image: url(img/kj.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	-webkit-text-size-adjust:none
+}
+.content{
+	position: relative;
+	width: 600px;
+	height: 700px;
+	top: 20px;
+	margin: 0 auto;
+}
+#first{
+	position: relative;
+	top: 2px;
+	margin-bottom: 37px;
+}
+#first h1{
+	color: #00bfff;
+	font-size: 30px;
+	font-weight: 900;
+}
+#gap{
+	position: relative;
+	top: -38px;
+	left: -30%;
+	/*margin-left: 0;*/
+}
+#gap img{
+	position: relative;
+	width: 300px;
+	height: 10px;
+}
+#second,#third,#four{
+	position: relative;
+	width: 600px;
+	height: 180px;
+	padding-top: 6px;
+}
+.thumb{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin-left: 58px;
+	display: inline-block;
+	left: -20px;
+	box-shadow: 0px 0px 1px 2px #00bfff,0 0 1px 3px #000,0 0 0 5px #00CED1;
+}
+.tol {
+	position: absolute;
+	width: 130px;
+	height: 80px;
+}
+.spn{
+	top: 115px;
+	left: 78px;
+}
+.sp,.bn{
+	top: 115px;
+	left: 245px;
+}
+.sn,.pn{
+	top: 115px;
+	left: 410px;
+}
+.gn{
+	top: 115px;
+	left: 160px;
+}
+.fn{
+	top: 115px;
+	left: 328px;
+}
+h1{
+	text-shadow:#00BFFF 1px 1px 1px;
+}
+h2{
+	font-size: 15px;
+	text-align: center;
+	color: #00bfff;
+	margin-bottom: 3px;
+}
+p{
+	font-size: 10px;
+	color: #00bfff;
+}
+.user-1{
+	background: url(../img/mht.jpg) no-repeat center center;
+	background-size: 150px;
+}
+.user-2{
+	background: url(../img/my.jpg) no-repeat center center;
+	background-size: 150px;
+}
+.user-3{
+	background-image: url(../img/zyq.jpg);
+	background-size: 100px;
+}
+.user-4{
+	background-image: url(../img/zcy.jpg);
+	background-size: 100px;
+}
+.user-5{
+	background-image: url(../img/cgw.jpg);
+	background-size: 100px;
+}
+.user-6{
+	background: url(../img/yyq.jpg) no-repeat center center;
+	background-size: 100px;
+}
+.user-7{
+	background: url(../img/cw.jpg) no-repeat 0px -2px;
+	background-size: 100px;
+}
+.user-8{
+	background: url(../img/zhw.jpg) no-repeat 0px 0px;
+	background-size: 100px;
+}
+.down img{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	padding: 0px;
+	top: 12px;
+	left: 6px;
+	border-radius: 50%;
+	z-index: 999;
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+.down:hover img{
+ 	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+.down{
+	position: absolute;
+	left: 48%;
+	top: 87%;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
